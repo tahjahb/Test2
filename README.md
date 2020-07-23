@@ -1,3 +1,3 @@
 # Tahjah Belcher
-What does HTML stand for
-What does css stand for
+Hyper Text Markup Language
+Cascading Style Sheets
