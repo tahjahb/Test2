@@ -5,11 +5,11 @@
 
 .box {
     border: 1px solid black;
-    height: 20ox;
+    height: 20px;
     width: 200px;
 }
 #orange {
-    background-color:#faa71b;
+    background-color:##faa71b;
     padding-top: 20px;
 }
 
