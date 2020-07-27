@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>July 23, 2020</title>
+<html>
+    <head>
+        <title>July 23, 2020</title>
+        <style>
+            * {
+                margin: 0px;
+            }
+
+            h3 {
+                margin: 20px;
+                color: rgb(55, 55, 255);
+            }
+            .wrapper {
+                background-color: lightgray;
+                height: 250px;
+                padding: 20px;
+            }
+
+            .box {
+                border: 10px solid white;
+                border-radius: 50px;
+                height: 20px;
+                width: 200px;
+                text-align: center;
+                font weight: 800;
+                font size: 20px;
+                font-family: Arial, helvetica, sans-serif ;
+                color: white;
+
+            }
+            #orange {
+                background-color:#faa71b;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                animation: slide-in 1s ease-in 0s forwards;
+                opacity: 0;
+                
+            }
+            #blue {
+                background-color: #005191;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                animation: slide-in 1s ease-in 0.5s forwards;
+                opacity: 0;            
+            }
+
+            @keyframes slide-in {
+                from {
+                    transform: translateX(0px);
+                }
+
+                to {
+                    transform: translateX(20px);
+                    opacity: 1;
+                }    
+            }
+
+        </style>
 </head>
 <body>
     <div class="wrapper">
+    <h3>July 23, 2020</h3>
         <div id="orange" class="box">
-
+            <p>Orange</p>
         </div>
         <div id="blue" class="box">
-
+            <p>Blue</p>
         </div>
     </div>
 </body>
