@@ -9,15 +9,25 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
     <!-- Font-Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO
-     +NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 
 <body>
 <!--Collapse-->
-<div class= "Collapse fixed-top bg-dark" id="mobileNavbar">
-
+<div class= "collapse fixed-top bg-dark" id="mobileNavbar">
+    <div class="container mobile-menu-wrapper">
+        <div class="row">
+            <div class="col">
+                <ul class="list-group mt-5 text-right">
+                    <li class="list-group-item bg-dark border-0">
+                        <a href="#Emojis">Emojis</a>
+                    </li>
+                    <li class="list-group-item bg-dark border-0">
+                        <a href="#Alerts">Alerts</a>
+                </ul>
+             </div>
+        </div>
+    </div>
 </div>
     <!-- Navbar -->
 		<nav class="navbar fixed-top navbar-dark bg-dark">
@@ -25,10 +35,7 @@
 				<img height="30" src="https://images.squarespace-cdn.com/content/55c4ffcfe4b0b6679a5a2ff5/1439433488777-HW2IVF8VYCIGIS6694VD/journilogo.png?content-type=image%2Fpng" alt="journilogo">
         </a>
         <!--Mobile-->
-        <button class= "navbar-toggler" data-toggle="Collapse" 
-        data-target="#mobileNavbar">
-            <i class="fas fa-bars"></i>
-        </button>    
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNavbar"> <i class="fas fa-bars"></i> </button>
 
         <!-- Desktop -->
 				<ul class="nav d-none">
@@ -101,10 +108,42 @@
 						<div class="alert alert-primary alert-dismissable fade show" role="alert">
 							<strong>.alert-primary</strong>
 							<button type="button" class="close" data-dismiss="alert"
-        aria-label="Close">
-        <span aria-hidden="true">&times;</span> 
-        </button>
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span> 
+                            </button>
 						</div>
+                        <div id="alerts" class="row">
+							<h2 class="section-header"></h2>
+						</div>
+						<div class="alert alert-danger alert-dismissable fade show" role="alert">
+							<strong>.alert-danger</strong>
+							<button type="button" class="close" data-dismiss="alert"
+                                 aria-label="Close">
+                                <span aria-hidden="true">&times;</span> 
+                            </button>
+						</div>
+                        <div id="alerts" class="row">
+							<h2 class="section-header"></h2>
+						</div>
+						<div class="alert alert-success alert-dismissable fade show" role="alert">
+							<strong>.alert-success</strong>
+							<button type="button" class="close" data-dismiss="alert"
+                                aria-label="Close">
+                                 <span aria-hidden="true">&times;</span> 
+                            </button>
+						</div>
+
+                        <!--Buttons-->
+						<div id="alerts" class="row">
+							<h2 class="section-header">Buttons</h2>
+						</div>
+                        <div class="row">
+                            <button class="btn mr-2 btn-primary">Button</button>
+                            <button class="btn mr-2 btn-outline-primary">Outline</button>
+                            <button class="btn mr-2 btn-danger">Danger</button>
+                            <button class="btn mr-2 btn-success">Success</button>
+                            <button class="btn mr-2 btn-info btn-block">Block</button>
+                        </div>
 
 						<!--Carousel-->
 
