@@ -19,10 +19,12 @@
         <div class="row">
             <div class="col">
                 <ul class="list-group mt-5 text-right">
-                    <li class="list-group-item bg-dark border-0">
+                    <li class="list-group-item bg-dark border-0"
+                    data-toggle= "collapse" data-target="#mobileNavbar">
                         <a href="#Emojis">Emojis</a>
                     </li>
-                    <li class="list-group-item bg-dark border-0">
+                    <li class="list-group-item bg-dark border-0"
+                    data-toggle= "collapse" data-target="#mobileNavbar">
                         <a href="#Alerts">Alerts</a>
                 </ul>
              </div>
@@ -90,16 +92,14 @@
 		<div class="row">
 			<div id="column-1" class="col-2 text-center">
 				<img class="icon" width="40"src="https://cdn.shopify.com/s/files/1/1061/1924/products/Unhappy_Face_Emoji_Icon_ios10_70x70.png?v=1511762072"alt="emoji">
-
-    </div>
-
-				<div id="column-2" class="col-8 text-center">
-					<img class="icon" width="40"src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_unamused_face_70x70.png?v=1485573436" alt="emoji">
-    </div>
-					<div id="column-3" class="col-2 text-center">
-						<img class="icon" width="40" src="https://cdn.shopify.com/s/files/1/1061/1924/files/Tongue_Out_Emoji_2_70x70.png?13752525173949329807" alt="emoji">
-
-    </div>
+            </div>
+			<div id="column-2" class="col-8 text-center">
+				<img class="icon" width="40"src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_unamused_face_70x70.png?v=1485573436" alt="emoji">
+            </div>
+			<div id="column-3" class="col-2 text-center">
+				<img class="icon" width="40" src="https://cdn.shopify.com/s/files/1/1061/1924/files/Tongue_Out_Emoji_2_70x70.png?13752525173949329807" alt="emoji">
+            </div>
+		</div>
 
 						<!--Alerts-->
 						<div id="alerts" class="row">
@@ -112,18 +112,12 @@
                                 <span aria-hidden="true">&times;</span> 
                             </button>
 						</div>
-                        <div id="alerts" class="row">
-							<h2 class="section-header"></h2>
-						</div>
 						<div class="alert alert-danger alert-dismissable fade show" role="alert">
 							<strong>.alert-danger</strong>
 							<button type="button" class="close" data-dismiss="alert"
                                  aria-label="Close">
                                 <span aria-hidden="true">&times;</span> 
                             </button>
-						</div>
-                        <div id="alerts" class="row">
-							<h2 class="section-header"></h2>
 						</div>
 						<div class="alert alert-success alert-dismissable fade show" role="alert">
 							<strong>.alert-success</strong>
@@ -142,18 +136,85 @@
                             <button class="btn mr-2 btn-outline-primary">Outline</button>
                             <button class="btn mr-2 btn-danger">Danger</button>
                             <button class="btn mr-2 btn-success">Success</button>
-                            <button class="btn mr-2 btn-info btn-block">Block</button>
+                            <button class="btn mr-2 mt-2 btn-info btn-block">Block</button>
+                        </div>
+
+                        <!-- Cards -->
+                        <div id="cards" class="row">
+							<h2 class="section-header">Cards</h2>
+						</div>
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-mb-5">
+                                <div class="card"style="width: auto;">
+                                <div class="card-header">Sunset</div>
+                                <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg"
+                                class="card-img-top" 
+                                alt="Sunset Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sunset</h5>
+                                    <p class="card-text">This Sunset looks pretty cool over the mountains.</p>
+                                    <a href="#" class="btn btn-primary"data-toggle="modal"
+                                    data-target="#exampleModal">Click</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-10 col-sm-mb-5">
+                                <div class="card"style="width: auto;">
+                                <div class="card-header">Detroit Skyline</div>
+                                <img src="https://traknetsolutions.com/wp-content/uploads/2019/11/detroit-skyline-linda-goodhue-photography.jpg"
+                                class="card-img-top" 
+                                alt="Detroit Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Detroit</h5>
+                                    <p class="card-text">The buildings in Detroit looks pretty cool.</p>
+                                    <a href="#" class="btn btn-primary"data-toggle="modal"
+                                    data-target="#exampleModal">Click</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modals -->
+                        <div class="modal fade" id="exampleModal">
+                        
+
+                        <!-- Modal Dialouge
+                             Modal Content 
+                             Modal Header > Modal Title & Close Button 
+                             Modal Body 
+                             Modal Footer 
+                         -->
+
+                         <div class="modal-dialouge">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal-Title</Title></h5>
+                                    <button class=" close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>This is the Modal's Body. Information goes here.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger"
+                                    data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                         </div>
                         </div>
 
 						<!--Carousel-->
+                        <div class="row" id="carousel">
+                        <h1 class="section-header">Carousel</h1>
+                        
+                        </div>
 
 						<!--Forms-->
 
-						<!--Modal-->
-
-						<!--Collapse-->
-
-						<!--Dropdown-->
+						
 					</div>
 					<!-- <div class="container-sm">100% wide until small breakpoint</div>
     <div class="container-md">100% wide until medium breakpoint</div>
